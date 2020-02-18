@@ -1,7 +1,7 @@
 from pokemon import pokemon
 import random
-choice = input("choose your pokemon \n A \n B \n ")
-if choice == "A":
+choice = input("choose your wepon \n big bad bob  \n wheres my whey jay \n ")
+if choice == "big bad bob":
     your_pokemon = pokemon(choice,100, 60, 80, "water")   
 else:
     your_pokemon = pokemon(choice,100, 80, 60,"fire")
@@ -18,12 +18,5 @@ while getattr(your_pokemon, "hp") > 0:
     if cmd == "x":
         damage = your_pokemon.calculate_damage(getattr(your_pokemon,"type_"),getattr(opponent_pokemon,"type_"),random.randint(1,50),random.randint(1,50))
         print("damage ", damage)
-        setattr(opponent_pokemon, )
-
-        break
-    else:
-        print("test")
-
-
-
-    
+        setattr(opponent_pokemon,"hp",getattr(opponent_pokemon,"hp") - damage)
+        print("opponents hp: ",getattr(opponent_pokemon,"hp"))
