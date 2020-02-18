@@ -1,3 +1,5 @@
+import pdb
+pdb.set_trace()
 hw = int(input("please enter homework grade"))
 ass = int(input("please enter assesment grade"))
 exam = int(input("please enter exam grade"))
