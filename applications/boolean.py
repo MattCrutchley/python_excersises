@@ -1,6 +1,5 @@
-
 def isDevCool(bool):
     if isDevCool == False:
-        print("Dev is cool")
+        return "Dev is cool"
     else:
-        print("Dev isn't cool")	
+        return "Dev isn't cool"	
