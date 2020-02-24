@@ -3,6 +3,6 @@ def bert(str):
     if str.lower().count("bert") < 2:
         return ""
     else:
-        return list_[-2]
+        return list_[-2][::-1]
 
 print(bert("xxBertfridgebERtyy"))
